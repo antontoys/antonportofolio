@@ -1,0 +1,75 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: Century Gothic;
+}
+
+body{
+	background:url(back.jpeg); 
+	background-size: cover;
+	box-sizing: border-box;
+
+.container {
+	margin: 60px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}	
+.container .logo{
+	margin: 0;
+	padding: 0;
+}
+
+.container .logo h2{
+	color: white;
+	font-size: 3em;
+	font-weight: bolder;
+	font-style: italic;
+}
+
+.container .nav{
+	width: 100%;
+}
+
+.container .nav .item{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+}
+
+.container .nav li{
+	list-style: none;
+	padding: 0 3px
+}
+
+.container .nav .item li a{
+	text-decoration: none;
+	padding: 5px 20px;
+	background:none;
+	color: white;
+	border:1px solid white;
+}
+
+.container .nav .item li a:hover{
+	background:#fff;
+	color: #000;
+
+}
+.container .nav .item li a.checked{
+	background:#fff;
+	color: #000;
+}
+
+.container .heading{
+	top: 50%;
+	left:50%;
+	transform: translate(-50%, -50%);
+	position: absolute;
+}
+
+.container .heading h2{
+	font-size: 70px;
+	color: #fff;
+}
