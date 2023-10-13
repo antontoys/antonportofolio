@@ -2,7 +2,7 @@ function searching_movie() {
 	// Getting Fetch API
 	const control = document.getElementById("search_control");
 	const Input = control.value;
-	fetch("http://www.omdbapi.com/?apikey=68d923d9&s=" + Input)
+	fetch("https://www.omdbapi.com/?apikey=68d923d9&s=" + Input)
 		.then((response) => response.json()) // Fetch API to Json File
 		.then((response) => {
 			Search_API(response); // Locate response data result to Data_API Function
@@ -36,7 +36,7 @@ function searching_movie() {
 			btn.addEventListener("click", function () {
 				const imdbid = this.dataset.imdbid; //Getting imdbid datas
 
-				fetch("http://www.omdbapi.com/?apikey=68d923d9&i=" + imdbid)
+				fetch("https://www.omdbapi.com/?apikey=68d923d9&i=" + imdbid)
 					.then((response) => response.json()) // Fetch API to Json File
 					.then((m) => {
 						const movieDetail = showMovieDetail(m); // Locate response data result to Data_API Function
