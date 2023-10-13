@@ -1,34 +1,197 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-	<meta charset="utf-8">
-	<meta name="viewpoint" content="
-	width-device-width, initial-scale=1.0">
-	<title>Projek Anton</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portofolio Anton</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 
 </head>
-<body>
-	<div class="container">
-		<div class="logo">
-			<h2>Anton</h2>
-		</div>
 
-		<div class="nav">
-			<ul class="item">
-				<li><a href="#">Home</a></li>
-				<li><a href="#">News</a></li>
-				<li><a href="#">Services</a></li>
-				<li><a href="#">About</a></li>
-				<li><a href="#">Contact</a></li>
-			</ul>
-		</div>
-		<div class="heading">
-			<h2>Portofolio Blog</h2>
-		</div>
-		<div class="btn">
-			<a href=""></a>
-		</div>
-	</div>
+<body>
+  <!-- Navbar Head -->
+  <div id="navbar-container ">
+    <nav class="navbar navbar-dark navbar-expand-lg bg-transparent fixed-top"
+      style="background-image: url('images/back.jpeg');">
+      <div class="container-fluid m-4">
+        <img class="gambar" src="images/profile.jpeg" alt="" width="100px" style="border-radius: 100%;">
+        <a class="navbar-brand ps-4">
+          <h2>Anton</h1>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end ms-3 mt-4" id="navbarNav">
+          <ul class="navbar-nav pe-2">
+
+            <li class="nav-item pe-4">
+              <a class="nav-link active" aria-current="page" href="#Profile_Me">
+                <h4>It's Me</h4>
+              </a>
+            </li>
+            <li class="nav-item pe-4">
+              <a class="nav-link" href="#pencari_movies">
+                <h4>Movies</h4>
+              </a>
+            </li>
+            <li class="nav-item pe-4">
+              <a class="nav-link" href="#contacts_footer">
+                <h4>Contact</h4>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <!-- /navbar Head-->
+
+  <!-- content spacing -->
+  <div class="px-4 py-5 my-5"></div>
+  <!-- content spacing -->
+
+  <!-- Introduction -->
+  <div class="px-4 py-5 my-5 text-center">
+    <h1 class="display-5 fw-bold text-body-emphasis">Hi, It's me Antonio Arias called Anton</h1>
+  </div>
+
+  <div class="px-4 py-5 my-5 text-center">
+    <h1 class="display-5 fw-bold text-body-emphasis">A Web Developer For Developt More Functionable sites</h1>
+  </div>
+
+  <div class="container text-center my-5">
+    <div class="row">
+      <div class="col-lg-6 offset-lg-3 d-flex flex-row align-items-center">
+
+        <div class="deskripsi me-lg-5 text-wrap ps-lg-4" id="Profile_Me">
+          <p>I am a web developer experienced in creating functional and attractive websites. With knowledge of HTML,
+            CSS,
+            Bootstrap, and JavaScript, I have the ability to develop a website that suits your needs.</p>
+          <p>I also have a project in the form of a film rating search site using the fetch api method. This interest
+            motivates me to create engaging and creative digital experiences.</p>
+        </div>
+        <div class="ms-lg-4">
+          <img class="imagedesc" src="images/profile2.png" alt="Your Image">
+        </div>
+      </div>
+    </div>
+    <!-- /Introduction -->
+
+    <!-- Carousel Bootstrap -->
+    <div class="px-4 py-5 my-5 text-center bg-dark border-5" id="text_moviesdesc">
+      <h1 class="display-5 fw-bold text-light">Any Film References</h1>
+    </div>
+
+    <div id="carouselExampleAutoplaying" class="carousel slide bg-dark" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div id="slide1" class="carousel-item active">
+          <h1 id="title_slide1">Title</h1>
+        </div>
+        <div id="slide2" class="carousel-item">
+          <h1 id="title_slide2">Title</h1>
+        </div>
+        <div id="slide3" class="carousel-item">
+          <h1 id="title_slide3">Title</h1>
+        </div>
+        <div id="slide4" class="carousel-item">
+          <h1 id="title_slide4">Title</h1>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- /Carousel Bootstrap -->
+
+    <div class="px-4 py-5 my-5 text-center" id="pencari_movies">
+      <h1 class="display-5 fw-bold text-body-emphasis">Type Movie Search References Below</h1>
+    </div>
+
+    <!-- Button Link -->
+    <div class="input-group mb-3">
+      <input type="text" class="form-control" id="search_control" placeholder="Type Movies You want know ..."
+        aria-label="Type Movies You want know ..." aria-describedby="button-addon2">
+      <button class="btn btn-outline-secondary" type="button" onclick="searching_movie()"
+        id="button-search">Search</button>
+    </div>
+    <!-- /Button Link -->
+
+    <div class="row" id="Smovie_container">
+
+    </div>
+
+    <!-- Modals -->
+    <div class="modal fade" id="details_movie" tabindex="-1" aria-labelledby="details_movieLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="details_movieLabel">Modal title</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /Modals -->
+
+    <!-- Introduction -->
+    <div class="px-4 py-5 my-5 text-center">
+      <h1 class="display-5 fw-bold text-body-emphasis">Thanks for participating</h1>
+    </div>
+
+    <!-- Contact -->
+
+
+
+
+    <div class="d-flex flex-column align-items-center" style="background-color: #333333; color: #ffffff;"
+      id="contacts_footer">
+      <h2 class="display-6 fw-bold text-bg-dark p-3 w-100">
+        Contact
+        Information</h2>
+      <p"><strong>Email:</strong> <a href="antonioarias1193@gmail.com" target="_blank"
+          class="text-light">antonioarias1193@gmail.com</a></p>
+        <p><strong>Phone:</strong> (+62) 0878-8005-8002</p>
+        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/antonio-arias-b3b752294/" target="_blank"
+            class="text-light">Antonio Arias</a></p>
+    </div>
+
+
+
+
+
+
+
+
+
+    <script src="Script.js"></script>
+    <script src="api.js"></script>
+    <script src="searchingApi.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"></script>
+
+
 </body>
+
 </html>

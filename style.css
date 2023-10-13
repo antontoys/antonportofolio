@@ -1,75 +1,113 @@
 *{
-	margin: 0;
-	padding: 0;
-	font-family: Century Gothic;
+  font-family: 'Roboto', sans-serif;
 }
 
-body{
-	background:url(back.jpeg); 
-	background-size: cover;
-	box-sizing: border-box;
+body {
+    margin: 0;
+    padding: 0;
+  }
 
-.container {
-	margin: 60px;
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
-}	
-.container .logo{
-	margin: 0;
-	padding: 0;
+  .stick_it .sticky{
+    padding: 5px 100px;
+
+  }
+.gambar {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    border: 2px solid #fff; 
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+
+  .gambar:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  }
+
+  .imagedesc{
+    width: 200px;
+    height: auto;
+
+    transition: transform 0.3s ease-in-out, circle-shadow 0.3s ease-in-out;
+  }
+
+  .imagedesc:hover{
+    transform: scale(1.1);
+
+  }
+
+  #text_moviesdesc {
+    border-radius: 10px;
+    max-width: 100rem;
+  }
+
+  .carousel-item {
+    position: absolute;
+    height: 32rem;
+    background-image: url('https://images.pexels.com/photos/147411/italy-mountains-dawn-daybreak-147411.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.6;
+    box-shadow: inset 0px -50px 200px 100px rgb(0, 0, 0);
+    color: white;
+  }
+  
+  .carousel-item h1 {
+    font-size: clamp(5rem, 10rem + 10vw, 10rem);
+    margin-top: 100px;
+    text-align: center;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  }
+  
+  @media (max-width: 768px) {
+    .carousel-item h1 {
+      font-size: clamp(3rem, 6rem + 6vw, 6rem);
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .carousel-item h1 {
+      font-size: clamp(2rem, 4rem + 4vw, 4rem);
+      margin-top: 50px;
+    }
+  }
+  
+  .deskripsi {
+    background: linear-gradient(to bottom, #f0f0f0, #e0e0e0);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: left;
 }
 
-.container .logo h2{
-	color: white;
-	font-size: 3em;
-	font-weight: bolder;
-	font-style: italic;
+.deskripsi p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #333;
 }
 
-.container .nav{
-	width: 100%;
+
+/* .custom-button {
+  margin-top: 30px;
+  background-color: #007BFF;
+  color: #fff;
+  font-size: 1.5rem;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer; 
+  transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s, color 0.3s;
+} */
+
+.custom-button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  color: #fff;
 }
 
-.container .nav .item{
-	display: flex;
-	flex-direction: row;
-	justify-content: flex-end;
-}
-
-.container .nav li{
-	list-style: none;
-	padding: 0 3px
-}
-
-.container .nav .item li a{
-	text-decoration: none;
-	padding: 5px 20px;
-	background:none;
-	color: white;
-	border:1px solid white;
-}
-
-.container .nav .item li a:hover{
-	background:#fff;
-	color: #000;
-
-}
-.container .nav .item li a.checked{
-	background:#fff;
-	color: #000;
-}
-
-.container .heading{
-	top: 50%;
-	left:50%;
-	transform: translate(-50%, -50%);
-	position: absolute;
-}
-
-.container .heading h2{
-	font-size: 70px;
-	color: #fff;
+@media (max-width: 768px) {
+  .custom-button {
+      margin-top: 40px;
+  }
 }
